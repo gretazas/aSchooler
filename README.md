@@ -77,29 +77,25 @@ Link to gitHub:
 
 * Viewing and navigation
 
-    * Shopper View a list of products Secect some to purchase
-    * Shopper View individual product details 
-    * Find out about product price, product itself, rating, view image, search for right sizes
-    * Shopper Search for deals Get great deals and offers on certain products
-    * Shopper Easy view the total of all purchases at all times. 
-    * Easy to see how close I am to the spending limit
+    * As a Shopper I can View a list of products so tnat I can Select some to purchase
+    * As a Shopper I can View individual product details so tnat I can Find out about the product price, product itself, rating, view image, search for right sizes
+    * As a Shopper I can Search for deals Get great deals and offers on certain products
+    * As a Shopper I can Easy view the total of all purchases at all times so tnat I can Easy to see how close I am to the spending limit
 
 * Registration and User Accounts
-    * Site User Register to the Account. 
-    * Having a personal account i can view my profile, order history, aved shipping and billing details.
-    * Site User Easy to login or logout Access my personal account information.
-    * Site User Easily recover  password if needed Recover access to my account
-    * Site User Receive an email conformaition after registering 
-    * Reansurance that recistraition was successful
+    * As a Site User I can Register to the Account so that I can Have a personal account i can view my profile, order history, aved shipping and billing details
+    * As a Site User I can Easy to login or logout so that I can Access my personal account information
+    * As a Site User  I canEasily recover  password so that I can Recover access to my account if needed 
+    * As a Site User I can Receive an email conformaition after registering so that I can Reinsurance that registration was successful
 
 * Sorting and searching
-    * Shopper  Sort the list of products Easy identify the best Easily see best rated products, and sort them by preferred 
-    * Shopper Sort specific category of product Find best priced or best rated products
-    * Shopper  Find product by name or description Find specific product to purchase
-    * Shopper  Easy to sea what ive searched for and how many found
+    * As a Shopper I can Sort the list of products so that I can Easy identify the best rated products, and sort them by preferred 
+    * As a Shopper I can Sort specific category of product so that I can Find best priced or best rated products
+    * As a Shopper I can Find the product by name or description so that I can Find specific product to purchase
+    * As a Shopper I can Easy see what I've searched for and how many items found
 
 * Purchasing and Checkout
-    * Shopper Easiely select the size and quantity of a product when purchasing it. * Ensuring ive selected right products
+    * As a Shopper I can Easiely select the size and quantity of the product when purchasing it so that I can Ensure I've selected the right products
 
 
 ### Project Database Scope
