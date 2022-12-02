@@ -27,7 +27,7 @@ Link to gitHub:
     * [Products Page Wireframe](./extrareadme.md)
     * [Product Detail Page Wireframe](./extrareadme.md)
     * [Shopping Cart Wireframe](./extrareadme.md)
-    * [Checkout Page Wireframe](./extrareadme.md)
+    * [Mix And Match Products Wireframe](./extrareadme.md)
                 
 * [Kanban Example](#kanban-example)
 * [Web Marketing](#web-marketing)
