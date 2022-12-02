@@ -1,108 +1,315 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+## Introduction
+Link to gitHub:
+<a href="https://github.com/gretazas/aSchooler">https://github.com/gretazas/aSchooler</a>
 
-Welcome USER_NAME,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Table of Contents
+* [Project Planning](#project-planning)
+* [Agile](#agile)
+    * [User Stories](#user-stories)
+    * [Project Dtabase Scope](#project-database-scope)
+    * [Project Setup](#project-setup)
+    * [Project Management](#project-management)
+    * [Features](#features)
+    * [Features - Features Left To Implement](#features-left-to-implement)
+    * [Products](#products)
+        * [Create An Account](#create-an-account)
+        * [Create an order](#create-an-order)
+        * [View an order](#view-an-order)
+        * [View Your order history](#view-your-order-history)
+        * [Delete Items](#delete-items)
+        * [Create Your Profile](#create-your-profile)
+        * [Edit Your Profile shipping details](#edit-your-profile-shipping-details)
+        * [Admin](#admin)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+* [Basic Wireframe Design](#basic-wireframe-design)
+    * [Landing Page Wireframe](./extrareadme.md)
+    * [Products Page Wireframe](./extrareadme.md)
+    * [Product Detail Page Wireframe](./extrareadme.md)
+    * [Shopping Cart Wireframe](./extrareadme.md)
+    * [Checkout Page Wireframe](./extrareadme.md)
+                
+* [Kanban Example](#kanban-example)
+* [Web Marketing](#web-marketing)
+* [SEO Optimization](#seo-optimization)
+* [Stripe payments](#stripe-payments)
+* [Testing](#testing)
+    * [Automated Testing](#automated-testing)
+    * [Django Coverage report](#django-coverage-report)
+    * [Manual Testing](#manual-testing)
+    * [Pep8 and Pylint Python Validators](#pep8-and-pylint-python-validators)
+    * [HTML Validation with Official W3C Validator](#html-validation-with-official-w3c-validator)
+    * [CSS Validation with Official W3C Validator](#css-validation-with-official-w3c-validator)
+    * [LightHouse testing](#lighthouse-testing)
+    * [Responsive testing](#responsive-testing)
+* [Bugs](#bugs)
+* [Existing Bugs](#existing-bugs)
+* [Deployment](#deployment)
+* [Deployment on Heroku](#deployment-on-heroku)
+* [Heroku Deployment - Setting up AWS](#heroku-deployment---setting-up-aws)
+* [MVT Architecture](#mvt-architecture)
+* [Django AdminUser](#django-adminuser)
+* [Used Technologies](#used-technologies)
+* [Frameworks and Libraries used](#frameworks-and-libraries-used)
+* [Credits](#credits)
 
-## Gitpod Reminders
+### Project Planning
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+* Create a personal user account.
+	- order history, saved shipping details.
 
-`python3 -m http.server`
+* Use allauth for login to user account.
+	- Secure way to register, login, log out.
 
-A blue button should appear to click: _Make Public_,
+* Have access to secure checkout.
+	- Using Stripe.
 
-Another blue button should appear to click: _Open Browser_.
+* Admin access to all products, orders, shipping details.
+	- Admin access allows to view orders.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
+### Agile
 
-Another blue button should appear to click: _Open Browser_.
+* [Basic Wireframe Design](#basic-wireframe-design)
+* [Kanban Example](#kanban-example)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### User Stories
 
-To log into the Heroku toolbelt CLI:
+* Viewing and navigation
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+    * Shopper View a list of products Secect some to purchase
+    * Shopper View individual product details 
+    * Find out about product price, product itself, rating, view image, search for right sizes
+    * Shopper Search for deals Get great deals and offers on certain products
+    * Shopper Easy view the total of all purchases at all times. 
+    * Easy to see how close I am to the spending limit
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+* Registration and User Accounts
+    * Site User Register to the Account. 
+    * Having a personal account i can view my profile, order history, aved shipping and billing details.
+    * Site User Easy to login or logout Access my personal account information.
+    * Site User Easily recover  password if needed Recover access to my account
+    * Site User Receive an email conformaition after registering 
+    * Reansurance that recistraition was successful
 
-------
+* Sorting and searching
+    * Shopper  Sort the list of products Easy identify the best Easily see best rated products, and sort them by preferred 
+    * Shopper Sort specific category of product Find best priced or best rated products
+    * Shopper  Find product by name or description Find specific product to purchase
+    * Shopper  Easy to sea what ive searched for and how many found
 
-## Release History
+* Purchasing and Checkout
+    * Shopper Easiely select the size and quantity of a product when purchasing it. * Ensuring ive selected right products
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+### Project Database Scope
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+Product/Category Model:
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+<img src="./media/category_db.png" alt="Product/Category Model" heigth="500" width="600"/>
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+Order/LineItems Model:
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+<img src="./media/order_db.png" alt="Order/LineItems Model" heigth="500" width="600"/>
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+Delivery info Model:
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+<img src="./media/delivery_info_db.png" alt="Delivery info Model" heigth="500" width="600"/>
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+<p align="right">(<a href="#top">Back to top</a>)</p>
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## Project Setup
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## Project Management
+GitHub's KanBan board to manage my workflow. [](https://github.com/)
+* Three columns:
+    - todo
+    - in progress
+    - done
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+The board allowed me to easily drag my stories through the business delivery lifecycle of: To Do -> In Progress -> Completed.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+## Features
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+## Features left to implement
+- Login via social media account, eg. facebook or google.
 
-------
+<p align="right">(<a href="#top">Back to top</a>)</p>
 
-## FAQ about the uptime script
 
-**Why have you added this script?**
+### Products
+ - categories: 
+ - info : sku, order numb
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### Create An Account
 
-**How will this affect me?**
+### Create an order
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### View an order
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+### View Your order history
+Users have an ability to view their own order history.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### Delete Items
+By setting your quantity to 0 user deletes the item from the order line items.
 
-**So….?**
+<p align="right">(<a href="#top">Back to top</a>)</p>
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+### Create Your Profile
 
-**Can I opt out?**
+### Edit Your Profile shipping details
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### Admin
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+### Basic Wireframe Design
 
-**Anything more?**
+* [Basic Wireframe Design](./extrareadme.md)
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+### Kanban Example
 
----
 
-Happy coding!
+<p align="right">(<a href="#top">Back to top</a>)</p>
+
+
+### Web Marketing
+- Facebook
+- Subscriptions
+
+### SEO Optimization
+
+- For Googles search engine I:
+
+ - Googled similar products fields and:
+
+  - Create meta tags with a description keywords.
+  - Make use of good semantics.
+  - Customed image names to the subject of the image using `alt` attribute.
+  - Content of the site matches the purpose.
+  - Create `sitemap.xml` file.
+  - Create `robots.txt` file.
+
+
+# Stripe payments
+
+### Testing
+
+### Automated Testing
+
+* TestCase
+
+#### Django Coverage report
+
+### Manual Testing
+
+### Pep8 and Pylint Python Validators
+
+### HTML Validation with Official W3C Validator
+
+### CSS Validation with Official W3C Validator
+
+<p align="right">(<a href="#top">Back to top</a>)</p>
+
+## LightHouse testing
+
+## Responsive testing
+
+## Bugs
+
+## Existing Bugs
+
+
+<p align="right">(<a href="#top">Back to top</a>)</p>
+
+## Deployment
+
+Deployment procedure (using Heroku):
+
+# Deployment on Heroku
+
+- Create a Heroku app within Heroku.
+- Give project "alfaSchooler" name
+- Set Postgres database on Heroku.
+- Create an env.py file in your root directory and import the os library within this file.
+- Within your env.py file, create environment variables for your DATABASE_URL and SECRET_KEY.
+- Assign a values to DATABASE_URL and SECRET_KEY and within the Heroku settings tab, create corresponding Config Variables.
+- Set `ALLOWED_HOSTS` in settings.py
+- Run migrations for the new Postgres database.
+- Heroku configurations.
+- Create Procfile to tell Heroku to create a web dyno which will run gunicorn and serve our Django app.
+- Push all changes and attempted the initial deployment on Heroku.
+- Heroku builds the app, if the built is successful.
+
+## Heroku Deployment - Setting up AWS
+
+- Set Amazon Web Services S3 - cloud based storage service - for storing static and media files.
+    - Create a new bucket to store files.
+    - Make publicly accessible..
+    - New endpoint.
+    - Set access between the Heroku app and S3 bucket.
+    - Bucket policy section access policy generator to create a security policy.
+    - Copy the ARN paste into the ARN box, add the statement and generated a policy.
+    - Copy this policy into the bucket policy editor.
+    - I proceeded to the access control list section and set the list objects permission for everyone under the Public Access section.
+    - Create a group.
+    - Import pre-built policy.
+    - Attach the policy to the group.
+    - Created a user.
+    - Download the CSV file with users access key and secret access key.
+    - Create a new folder "media" for all media files.
+    - Grant public read access to these objects.
+- Install boto3 and django-storage.
+- Set settings.py with a statement: if there's an environment variable called `USE_AWS` in the environment. 
+    - Define the bucket name, the AWS region name, the access key and secret access key 
+    - Keep access key and secret access hiding in environment variables.
+    - Create a string to tell Django location of static files, containing the AWS S3 bucket name to generate the appropriate URL.
+    - Set static file storage and the location.
+    - Set imports.
+    - Set the default file storage/ media files locations.
+    - Set the URLs for static and media files using the custom domain and the new locations.
+    - Add  `AWS_S3_OBJECT_PARAMETERS`.
+    - 
+- In Heroku add the AWS keys to the configuration variables.
+    - Remove the collect static variable from config vars.
+    - Add stripe keys to the Heroku config vars.
+    - Add the URL `/checkout/WH`.
+    - Add webhooks signing secret to the Heroku config vars.
+
+- Stripe webpage.
+    - Add a new webhook endpoint.
+
+# MVT Architecture
+
+
+### Django AdminUser
+
+
+## Used Technologies
+* HTML
+* CSS
+* Python
+* JavaScript
+
+## Frameworks and Libraries used
+* Django with;
+    * gunicorn
+    * psycopg2
+    * postgresql
+    * AllAuth
+    * Crispy Forms
+    * colorfield
+* Bootstrap
+
+
+
+## Credits
+  <img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" width="90">
+
+- [temp-mail.org](https://temp-mail.org/en/)
+- [miniwebtool.com](https://miniwebtool.com/django-secret-key-generator/)
+- [XML-Sitemaps.com](https://www.xml-sitemaps.com/)
+- [Privacy Policy Generator](https://www.privacypolicygenerator.info/)
+- [CSS tricks](https://css-tricks.com/snippets/css/css-triangle/)
+
+
+  <p align="right">(<a href="#top">Back to top</a>)</p>
