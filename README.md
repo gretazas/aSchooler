@@ -129,6 +129,20 @@ The board allowed me to easily drag my stories through the business delivery lif
 
 ## Features
 
+    Import:
+        - datetime
+        - pandas as pd
+        - start = datetime.datetime.strptime("01-12-2021", "%d-%m-%Y")
+        - end = datetime.datetime.strptime("07-12-2021", "%d-%m-%Y")
+        - date_generated = pd.date_range(start, end)
+            - Greatings according to season:
+            - if September f"Back to School!"
+            - elif December f"Happy Christmas!!!"
+            - elif February f"Happy Valentine`s Day!"
+            - elif March/april f"Happy Easter!"
+            - elif August f"Sale! 10% off with any purchase!"
+            - else f"delivery free with purchase of {{ FRE_DELIVERY_TRESHOLD}}€!"
+
 ## Features left to implement
 - Login via social media account, eg. facebook or google.
 
@@ -171,25 +185,27 @@ By setting your quantity to 0 user deletes the item from the order line items.
 
 ### Web Marketing
 - Facebook
+    - <img src="./media/schooler_fb(1).png" heigth="500" width="600" />
+    - <img src="./media/schooler_fb(2).png" heigth="500" width="600" />
 - Subscriptions
 
 ### SEO Optimization
 
-- For Googles search engine I:
+- For Googles search engine:
 
- - Googled similar products fields and:
+    - I Googled similar products fields and:
 
-  - Create meta tags with a description keywords.
-  - Make use of good semantics.
-  - Customed image names to the subject of the image using `alt` attribute.
-  - Content of the site matches the purpose.
-  - Create `sitemap.xml` file.
-  - Create `robots.txt` file.
+    - Created meta tags with a description keywords.
+    - Made use of good semantics.
+    - Customed image names to the subject of the image using `alt` attribute.
+    - Contented of the site matches the purpose.
+    - Created `sitemap.xml` file.
+    - Created `robots.txt` file.
 
 
-# Stripe payments
+## Stripe payments
 
-### Testing
+## Testing
 
 ### Automated Testing
 
@@ -207,9 +223,9 @@ By setting your quantity to 0 user deletes the item from the order line items.
 
 <p align="right">(<a href="#top">Back to top</a>)</p>
 
-## LightHouse testing
+### LightHouse testing
 
-## Responsive testing
+### Responsive testing
 
 ## Bugs
 
@@ -222,7 +238,7 @@ By setting your quantity to 0 user deletes the item from the order line items.
 
 Deployment procedure (using Heroku):
 
-# Deployment on Heroku
+### Deployment on Heroku
 
 - Create a Heroku app within Heroku.
 - Give project "alfaSchooler" name
@@ -237,7 +253,7 @@ Deployment procedure (using Heroku):
 - Push all changes and attempted the initial deployment on Heroku.
 - Heroku builds the app, if the built is successful.
 
-## Heroku Deployment - Setting up AWS
+### Heroku Deployment - Setting up AWS
 
 - Set Amazon Web Services S3 - cloud based storage service - for storing static and media files.
     - Create a new bucket to store files.
@@ -275,10 +291,10 @@ Deployment procedure (using Heroku):
 - Stripe webpage.
     - Add a new webhook endpoint.
 
-# MVT Architecture
+## MVT Architecture
 
 
-### Django AdminUser
+## Django AdminUser
 
 
 ## Used Technologies
