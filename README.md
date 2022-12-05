@@ -8,21 +8,21 @@ Link to gitHub:
 * [Project Planning](#project-planning)
 * [Agile](#agile)
     * [User Stories](#user-stories)
+    * [Project Scope](#project-scope)
     * [Project Dtabase Scope](#project-database-scope)
     * [Project Setup](#project-setup)
     * [Project Management](#project-management)
-    * [Features](#features)
-    * [Features - Features Left To Implement](#features-left-to-implement)
+* [Features](#features)
     * [Products](#products)
-        * [Create An Account](#create-an-account)
-        * [Create an order](#create-an-order)
-        * [View an order](#view-an-order)
-        * [View Your order history](#view-your-order-history)
-        * [Delete Items](#delete-items)
-        * [Create Your Profile](#create-your-profile)
-        * [Edit Your Profile shipping details](#edit-your-profile-shipping-details)
-        * [Admin](#admin)
-
+    * [Create An Account](#create-an-account)
+    * [Create an order](#create-an-order)
+    * [View an order](#view-an-order)
+    * [View Your order history](#view-your-order-history)
+    * [Delete Items](#delete-items)
+    * [Create Your Profile](#create-your-profile)
+    * [Edit Your Profile shipping details](#edit-your-profile-shipping-details)
+    * [Admin](#admin)
+* [Features - Features Left To Implement](#features-left-to-implement)
 * [Basic Wireframe Design](#basic-wireframe-design)
     * [Landing Page Wireframe](./extrareadme.md)
     * [Products Page Wireframe](./extrareadme.md)
@@ -54,7 +54,7 @@ Link to gitHub:
 * [Frameworks and Libraries used](#frameworks-and-libraries-used)
 * [Credits](#credits)
 
-### Project Planning
+## Project Planning
 
 * Create a personal user account.
 	- order history, saved shipping details.
@@ -69,12 +69,12 @@ Link to gitHub:
 	- Admin access allows to view orders.
 
 
-### Agile
+## Agile
 
 * [Basic Wireframe Design](#basic-wireframe-design)
 * [Kanban Example](#kanban-example)
 
-### User Stories
+## User Stories
 
 * Viewing and navigation
 
@@ -98,8 +98,11 @@ Link to gitHub:
 * Purchasing and Checkout
     * As a Shopper I can Easiely select the size and quantity of the product when purchasing it so that I can Ensure I've selected the right products
 
+## Project Scope
 
-### Project Database Scope
+<img src="./media/planning_scope.png" alt="Product/Category Model" heigth="1500" width="1400"/>
+
+## Project Database Scope
 
 Product/Category Model:
 
@@ -129,29 +132,26 @@ The board allowed me to easily drag my stories through the business delivery lif
 
 ## Features
 
+View different greetings on different time of the year:
     Import:
         - datetime
         - pandas as pd
-        - start = datetime.datetime.strptime("01-12-2021", "%d-%m-%Y")
-        - end = datetime.datetime.strptime("07-12-2021", "%d-%m-%Y")
-        - date_generated = pd.date_range(start, end)
-            - Greatings according to season:
-            - if September f"Back to School!"
-            - elif December f"Happy Christmas!!!"
-            - elif February f"Happy Valentine`s Day!"
-            - elif March/april f"Happy Easter!"
-            - elif August f"Sale! 10% off with any purchase!"
-            - else f"delivery free with purchase of {{ FRE_DELIVERY_TRESHOLD}}€!"
-
-## Features left to implement
-- Login via social media account, eg. facebook or google.
-
-<p align="right">(<a href="#top">Back to top</a>)</p>
+            - start = datetime.datetime.strptime("01-12-2021", "%d-%m-%Y")
+            - end = datetime.datetime.strptime("07-12-2021", "%d-%m-%Y")
+            - date_generated = pd.date_range(start, end)
+                - Greatings according to season:
+                - if September f"Back to School!"
+                - elif December f"Happy Christmas!!!"
+                - elif February f"Happy Valentine`s Day!"
+                - elif March/april f"Happy Easter!"
+                - elif August f"Sale! 10% off with any purchase!"
+                - else f"delivery free with purchase of {{ FRE_DELIVERY_TRESHOLD}}€!"
 
 
 ### Products
- - categories: 
- - info : sku, order numb
+- Filter products by categories 
+- 
+ 
 
 ### Create An Account
 
@@ -173,6 +173,16 @@ By setting your quantity to 0 user deletes the item from the order line items.
 
 ### Admin
 
+<img src="" heigth="500" width="600" />
+
+
+
+## Features left to implement
+- Login via social media account, eg. facebook or google.
+
+<p align="right">(<a href="#top">Back to top</a>)</p>
+
+
 ### Basic Wireframe Design
 
 * [Basic Wireframe Design](./extrareadme.md)
@@ -184,9 +194,9 @@ By setting your quantity to 0 user deletes the item from the order line items.
 
 
 ### Web Marketing
-- Facebook
-    - <img src="./media/schooler_fb(1).png" heigth="500" width="600" />
-    - <img src="./media/schooler_fb(2).png" heigth="500" width="600" />
+- Facebook <br>
+    <img src="./media/schooler_fb(1).png" heigth="500" width="600" />
+    <img src="./media/schooler_fb(2).png" heigth="500" width="600" />
 - Subscriptions
 
 ### SEO Optimization
@@ -293,6 +303,7 @@ Deployment procedure (using Heroku):
 
 ## MVT Architecture
 
+<img src="./media/MVT.png" heigth="500" width="600" />
 
 ## Django AdminUser
 
@@ -325,4 +336,12 @@ Deployment procedure (using Heroku):
 - [CSS tricks](https://css-tricks.com/snippets/css/css-triangle/)
 
 
+![Safe](https://img.shields.io/badge/Stay-Safe-red?logo=data:image/svg%2bxml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNTEwIDUxMCIgaGVpZ2h0PSI1MTIiIHZpZXdCb3g9IjAgMCA1MTAgNTEwIiB3aWR0aD0iNTEyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnPjxnPjxwYXRoIGQ9Im0xNzQuNjEgMzAwYy0yMC41OCAwLTQwLjU2IDYuOTUtNTYuNjkgMTkuNzJsLTExMC4wOSA4NS43OTd2MTA0LjQ4M2g1My41MjlsNzYuNDcxLTY1aDEyNi44MnYtMTQ1eiIgZmlsbD0iI2ZmZGRjZSIvPjwvZz48cGF0aCBkPSJtNTAyLjE3IDI4NC43MmMwIDguOTUtMy42IDE3Ljg5LTEwLjc4IDI0LjQ2bC0xNDguNTYgMTM1LjgyaC03OC4xOHYtODVoNjguMThsMTE0LjM0LTEwMC4yMWMxMi44Mi0xMS4yMyAzMi4wNi0xMC45MiA0NC41LjczIDcgNi41NSAxMC41IDE1LjM4IDEwLjUgMjQuMnoiIGZpbGw9IiNmZmNjYmQiLz48cGF0aCBkPSJtMzMyLjgzIDM0OS42M3YxMC4zN2gtNjguMTh2LTYwaDE4LjU1YzI3LjQxIDAgNDkuNjMgMjIuMjIgNDkuNjMgNDkuNjN6IiBmaWxsPSIjZmZjY2JkIi8+PHBhdGggZD0ibTM5OS44IDc3LjN2OC4wMWMwIDIwLjY1LTguMDQgNDAuMDctMjIuNjQgNTQuNjdsLTExMi41MSAxMTIuNTF2LTIyNi42NmwzLjE4LTMuMTljMTQuNi0xNC42IDM0LjAyLTIyLjY0IDU0LjY3LTIyLjY0IDQyLjYyIDAgNzcuMyAzNC42OCA3Ny4zIDc3LjN6IiBmaWxsPSIjZDAwMDUwIi8+PHBhdGggZD0ibTI2NC42NSAyNS44M3YyMjYuNjZsLTExMi41MS0xMTIuNTFjLTE0LjYtMTQuNi0yMi42NC0zNC4wMi0yMi42NC01NC42N3YtOC4wMWMwLTQyLjYyIDM0LjY4LTc3LjMgNzcuMy03Ny4zIDIwLjY1IDAgNDAuMDYgOC4wNCA1NC42NiAyMi42NHoiIGZpbGw9IiNmZjRhNGEiLz48cGF0aCBkPSJtMjEyLjgzIDM2MC4xMnYzMGg1MS44MnYtMzB6IiBmaWxsPSIjZmZjY2JkIi8+PHBhdGggZD0ibTI2NC42NSAzNjAuMTJ2MzBoMzYuMTRsMzIuMDQtMzB6IiBmaWxsPSIjZmZiZGE5Ii8+PC9nPjwvc3ZnPg==)
+
   <p align="right">(<a href="#top">Back to top</a>)</p>
+
+  <!-- [![GitHub Actions Status Badge](https://github.com/GoogleChrome/lighthouse/workflows/CI/badge.svg)](https://github.com/GoogleChrome/lighthouse/actions/workflows/ci.yml) 
+  [![GitHub Actions Status Badge](https://github.com/GoogleChrome/lighthouse/workflows/unit/badge.svg)](https://github.com/GoogleChrome/lighthouse/actions/workflows/unit.yml) 
+  [![GitHub Actions Status Badge](https://github.com/GoogleChrome/lighthouse/workflows/smoke/badge.svg)](https://github.com/GoogleChrome/lighthouse/actions/workflows/smoke.yml) [![Coverage Status](https://codecov.io/gh/GoogleChrome/lighthouse/branch/master/graph/badge.svg)](https://codecov.io/gh/GoogleChrome/lighthouse)
+  [![Build tracker for Lighthouse](https://img.shields.io/badge/buildtracker-ok-blue)](https://lh-build-tracker.herokuapp.com/) 
+  [![NPM lighthouse package](https://img.shields.io/npm/v/lighthouse.svg)](https://npmjs.org/package/lighthouse) -->
