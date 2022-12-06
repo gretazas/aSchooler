@@ -1,6 +1,6 @@
 # Landing Page Wireframe
 
-![landing_page](./media/home_page.png)
+![landing_page](./media/home_page.jpg)
 
 <br>
 <br>
@@ -9,7 +9,7 @@
 
 # Products Page Wireframe
 
-![product_page](./media/filtered_products.png)
+![product_page](./media/filtered_products.jpg)
 
 <br>
 <br>
@@ -18,7 +18,7 @@
 
 # Products Detail Page Wireframe
 
-![product_detail_page](./media/product_detail.png)
+![product_detail_page](./media/product_detail.jpg)
 
 <br>
 <br>
@@ -27,7 +27,7 @@
 
 # Shopping Cart Wireframe
 
-![shopping_cart](./media/bag.png)
+![shopping_cart](./media/bag.jpg)
 
 <br>
 <br>
@@ -36,7 +36,7 @@
 
 # Mix And Match Products Wireframe
 
-![Mix And Match Products Wireframe](./media/match_products.png)
+![Mix And Match Products Wireframe](./media/match_products.jpg)
 
 
 

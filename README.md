@@ -100,21 +100,21 @@ Link to gitHub:
 
 ## Project Scope
 
-<img src="./media/planning_scope.png" alt="Product/Category Model" heigth="1500" width="1400"/>
+<img src="./media/planning_scope.jpg" alt="Product/Category Model" heigth="1500" width="1400"/>
 
 ## Project Database Scope
 
 Product/Category Model:
 
-<img src="./media/category_db.png" alt="Product/Category Model" heigth="500" width="600"/>
+<img src="./media/category_db.jpg" alt="Product/Category Model" heigth="500" width="600"/>
 
 Order/LineItems Model:
 
-<img src="./media/order_db.png" alt="Order/LineItems Model" heigth="500" width="600"/>
+<img src="./media/order_db.jpg" alt="Order/LineItems Model" heigth="500" width="600"/>
 
 Delivery info Model:
 
-<img src="./media/delivery_info_db.png" alt="Delivery info Model" heigth="500" width="600"/>
+<img src="./media/delivery_info_db.jpg" alt="Delivery info Model" heigth="500" width="600"/>
 
 <p align="right">(<a href="#top">Back to top</a>)</p>
 
@@ -195,8 +195,8 @@ By setting your quantity to 0 user deletes the item from the order line items.
 
 ### Web Marketing
 - Facebook <br>
-    <img src="./media/schooler_fb(1).png" heigth="500" width="600" />
-    <img src="./media/schooler_fb(2).png" heigth="500" width="600" />
+    <img src="./media/schooler_fb(1).jpg" heigth="500" width="600" />
+    <img src="./media/schooler_fb(2).jpg" heigth="500" width="600" />
 - Subscriptions
 
 ### SEO Optimization
@@ -303,7 +303,7 @@ Deployment procedure (using Heroku):
 
 ## MVT Architecture
 
-<img src="./media/MVT.png" heigth="500" width="600" />
+<img src="./media/MVT.jpg" heigth="500" width="600" />
 
 ## Django AdminUser
 
