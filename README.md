@@ -2,7 +2,7 @@
 Link to gitHub:
 <a href="https://github.com/gretazas/aSchooler">https://github.com/gretazas/aSchooler</a>
 
-<img src="./media/definition_of_schooler.png" alt="definition of the schooler" heigth="500" width="600"/>
+<img src="./media/definition_of_schooler.jpg" alt="definition of the schooler" heigth="500" width="600"/>
 
 ## Table of Contents
 * [Project Planning](#project-planning)
