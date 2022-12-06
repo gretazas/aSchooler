@@ -112,6 +112,18 @@ Order/LineItems Model:
 
 <img src="./media/order_db.jpg" alt="Order/LineItems Model" heigth="500" width="600"/>
 
+Feedback Model:
+
+<img src="./media/feedback_db.jpg" alt="Order/LineItems Model" heigth="500" width="600"/>
+
+Rate Product Model:
+
+<img src="./media/rate_product_db.jpg" alt="Order/LineItems Model" heigth="500" width="600"/>
+
+Collect Points Model:
+
+<img src="./media/collect_points_db.jpg" alt="Order/LineItems Model" heigth="500" width="600"/>
+
 Delivery info Model:
 
 <img src="./media/delivery_info_db.jpg" alt="Delivery info Model" heigth="500" width="600"/>
