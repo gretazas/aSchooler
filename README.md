@@ -56,47 +56,72 @@ Link to gitHub:
 
 ## Project Planning
 
-* Create a personal user account.
-	- order history, saved shipping details.
+* Create wireframes as sketches.
+    -   Imagination realization
 
-* Use allauth for login to user account.
-	- Secure way to register, login, log out.
+* Create wireframes with figma.com
+    -   Imagination realization in digital
+
+* Create user stories
+    -   To get an idea of site usage purposes and features
+
+* Create some parts of readme.md file
+    -   To get mentor's approval to start the project
+
+* Create this project plan
+    -   Get a straight idea of what to do and when
+
+* Create a new repository on GitHub
+    -   Use Code Institute`s  full template
+
+* Start project
+    -   Initial Commit
+
+
+
+
+
+* Use user stories creating project as guidance
+    -   Easy to organize work with and commit messages
 
 * Have access to secure checkout.
-	- Using Stripe.
+    -   Using Stripe.
 
-* Admin access to all products, orders, shipping details.
-	- Admin access allows to view orders.
+* Admin access to all products, orders, and shipping details.
+    -   Admin access allows you to view orders.
+
 
 
 ## Agile
 
-* [Basic Wireframe Design](#basic-wireframe-design)
+* [Basic Wireframe Design](./extrareadme.md)
 * [Kanban Example](#kanban-example)
 
 ## User Stories
 
 * Viewing and navigation
 
-    * As a Shopper I can View a list of products so tnat I can Select some to purchase
-    * As a Shopper I can View individual product details so tnat I can Find out about the product price, product itself, rating, view image, search for right sizes
+    * As a Shopper I can View a list of products so that I can Select some to purchase
+    * As a Shopper I can View individual product details so that I can Find out about the product price, product itself, rating, view image, search for right sizes
     * As a Shopper I can Search for deals Get great deals and offers on certain products
-    * As a Shopper I can Easy view the total of all purchases at all times so tnat I can Easy to see how close I am to the spending limit
+    * As a Shopper I can Easy view the total of all purchases at all times so that I can Easy to see how close I am to the spending limit
 
 * Registration and User Accounts
     * As a Site User I can Register to the Account so that I can Have a personal account i can view my profile, order history, aved shipping and billing details
-    * As a Site User I can Easy to login or logout so that I can Access my personal account information
-    * As a Site User  I canEasily recover  password so that I can Recover access to my account if needed 
-    * As a Site User I can Receive an email conformaition after registering so that I can Reinsurance that registration was successful
+    * As a Site Member I can Easy to login or logout so that I can Access my personal account information
+    * As a Site Member  I can Easily recover  password so that I can Recover access to my account if needed 
+    * As a Site Member I can Receive an email conformaition after registering so that I can Reinsurance that registration was successful
 
 * Sorting and searching
     * As a Shopper I can Sort the list of products so that I can Easy identify the best rated products, and sort them by preferred 
     * As a Shopper I can Sort specific category of product so that I can Find best priced or best rated products
     * As a Shopper I can Find the product by name or description so that I can Find specific product to purchase
     * As a Shopper I can Easy see what I've searched for and how many items found
+    * As a Site Member I can acces page with matchig feature so that I can compare in color products to match them
 
 * Purchasing and Checkout
     * As a Shopper I can Easiely select the size and quantity of the product when purchasing it so that I can Ensure I've selected the right products
+    * As a Shopper I can Have access to secure checkout so that I can feel safe and pay with ease
 
 ## Project Scope
 
@@ -203,6 +228,7 @@ By setting your quantity to 0 user deletes the item from the order line items.
 
 
 <p align="right">(<a href="#top">Back to top</a>)</p>
+<p align="right">(<a href="#agile">Back to Agile</a>)</p>
 
 
 ### Web Marketing
