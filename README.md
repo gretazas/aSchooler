@@ -148,10 +148,6 @@ Collect Points Model:
 
 <img src="./media/collect_points_db.jpg" alt="Order/LineItems Model" heigth="500" width="600"/>
 
-Delivery info Model:
-
-<img src="./media/delivery_info_db.jpg" alt="Delivery info Model" heigth="500" width="600"/>
-
 <p align="right">(<a href="#top">Back to top</a>)</p>
 
 
@@ -186,14 +182,19 @@ View different greetings on different time of the year:
 
 ### Products
 - Filter products by categories 
-- 
- 
+- View product detail
+- Rate product
+- Save product purchase history
+- Save purchased product saving points histopy
 
 ### Create An Account
+- Create save account with email varification.
 
 ### Create an order
+- Create and order after clicking checkout and see them in profile later.
 
 ### View an order
+- View your order and collect points history in profile page
 
 ### View Your order history
 Users have an ability to view their own order history.
@@ -204,10 +205,15 @@ By setting your quantity to 0 user deletes the item from the order line items.
 <p align="right">(<a href="#top">Back to top</a>)</p>
 
 ### Create Your Profile
+- Create account for ability to rate product
+- Save points, one point per one euro from every purchase
+- Save information for next purchase itme
 
 ### Edit Your Profile shipping details
+- Easily edit profile information save from earlier
 
 ### Admin
+
 
 <img src="" heigth="500" width="600" />
 
@@ -249,10 +255,18 @@ By setting your quantity to 0 user deletes the item from the order line items.
     - Created `sitemap.xml` file.
     - Created `robots.txt` file.
 
-
+- Keywords:
+    - School items, school products, stationary, office, company suplies, school bags, paper, folders,  organisation suplies, math set, art suplies, pencils, markers.
+    <hr>
+    <img src="./media/google_search.jpg" heigth="500" width="600" />
 ## Stripe payments
 
 ## Testing
+
+<img src="./media/add_product_test(1).jpg" heigth="500" width="600" />
+<img src="./media/edit_product_test.jpg" heigth="500" width="600" />
+<img src="./media/update_product_test.jpg" heigth="500" width="600" />
+<img src="./media/delete_product_test.jpg" heigth="500" width="600" />
 
 ### Automated Testing
 
@@ -275,6 +289,10 @@ By setting your quantity to 0 user deletes the item from the order line items.
 ### Responsive testing
 
 ## Bugs
+
+- Product import in ratings app and Rating import in Product app. Circular import bug.
+    - Tried to import products.models and go around with it.
+    - Solution: imported Product in the Ratings function.
 
 ## Existing Bugs
 
